@@ -1,16 +1,23 @@
 # Hotel-Reservation-WebServer
 # 호텔 예약 / 관리 웹 서비스
 ---
-
+<br>
 사용한 기술 스택 
 1. Apache2(웹서버)
 2. PHP(백엔드 - 프론트 연결)
 3. MySQL(백엔드)
 
+
+
 Apache2로 웹페이지를 보여주고 뒤에는 PHP를 이용해 MySQL 백엔드에 연결했다.
 * 군대에서 진행하는 프로젝트라 codeanywhere을 적극적으로 이용
 
-ROUGTH SKETCH
+<br>
+<br>
+
+## ROUGTH SKETCH
+
+<br>
 
 호텔 예약 프로그램
 
