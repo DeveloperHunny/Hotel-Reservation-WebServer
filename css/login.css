@@ -1,0 +1,122 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: black;
+}
+
+button{
+    border: none;
+    background: none;
+}
+
+button, button:focus{
+    cursor: pointer;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: skyblue;
+}
+
+.container > #title{
+    font-size: 25px;
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%,-50%);
+}
+
+.loginBox{
+    width: 40%;
+    height:55%;
+    max-width: 400px;
+    min-width: 350px;
+
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+
+    text-align: center;
+
+}
+
+.loginBox input[name="tab_button"]{
+    padding: 10px;
+    display:none;
+}
+
+.loginBox .tabLabel{
+    display:inline-block;
+    width: calc(60%/2);
+    float:left;
+    
+    background-color:white;
+    padding:5px;
+
+    /*border*/
+    border:3px solid black;
+    border-radius: 5px 5px 0px 0px / 5px 5px 0px 0px;
+}
+
+.loginBox form{
+
+    background: white;
+
+    text-align: center;
+    width:100%;
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-evenly;
+    align-items:center;
+    font-size:10px;
+
+    /*border*/
+    border:3px solid black;
+    border-radius: 0px 5px 5px 5px / 0px 5px 5px 5px;
+
+    display:none;
+    overflow: hidden;
+}
+
+.loginBox form > #title{
+    font-size:20px;
+}
+
+.loginBox form #loginBtn{
+    width:50%;
+    background:skyblue;
+    padding:8px;
+    border-radius:5px;
+    border:1px solid black;
+    font-size:15px;
+    font-weight:bold;
+
+    
+}
+
+.loginBox form #signUpBtn{
+    color:blue;
+}
+
+
+.loginBox form label{
+    margin-right:8px;
+}
+
+
+
+/* show tab content clicked */
+#tab_client:checked ~ #client_loginForm,
+#tab_manager:checked ~ #manager_loginForm{
+    display: flex;
+}
+
+/*  clicked tab style */
+.loginBox input[name="tab_button"]:checked + .tabLabel{
+    background-color: blue;
+    color:white;
+}
