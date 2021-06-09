@@ -14,7 +14,7 @@
                 <label for="tab_manager" class="tabLabel">MANAGER</label>
 
                 <form id="client_loginForm" method="POST" action="loginCheck.php">
-                    <span id=title><h1>LOGIN_CLI</h1></span>
+                    <span id=title><h1>CLIENT</h1></span>
                     <div class="inputField">
                         <label>ID</label><input type="text" name="input_id" placeholder="Enter your id" size="18">
                     </div>
@@ -25,8 +25,8 @@
                     <div><label>Don't you have ID?</label><button id="signUpBtn">sign up</button></div>
                 </form>
 
-                <form id="manager_loginForm" method="POST" action="loginCheck.php">
-                    <span id=title><h1>LOGIN</h1></span>
+                <form id= "manager_loginForm" method="POST" action="loginCheck.php">
+                    <span id=title><h1>MANAGER</h1></span>
                     <div class="inputField">
                         <label>ID</label><input type="text" name="input_id" placeholder="Enter your id" size="18">
                     </div>
