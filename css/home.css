@@ -1,0 +1,26 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: black;
+}
+
+button{
+    border:none;
+    background:transparent;
+}
+
+button, button:focus{
+    cursor:pointer;
+}
+
+.container{
+    width:100vw;
+    height:100vh;
+    background:white;
+}
+
+header{
+    width:100%;
+    background:skyblue;
+}

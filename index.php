@@ -13,7 +13,7 @@
                 <input type="radio" name="tab_button" id="tab_manager">
                 <label for="tab_manager" class="tabLabel">MANAGER</label>
 
-                <form id="client_loginForm" method="POST" action="loginCheck.php">
+                <form id="client_loginForm" method="POST" action="./login/loginCheck_client.php">
                     <span id=title><h1>CLIENT</h1></span>
                     <div class="inputField">
                         <label>ID</label><input type="text" name="input_id" placeholder="Enter your id" size="18">
@@ -25,7 +25,7 @@
                     <div><label>Don't you have ID?</label><button id="signUpBtn">sign up</button></div>
                 </form>
 
-                <form id= "manager_loginForm" method="POST" action="loginCheck.php">
+                <form id= "manager_loginForm" method="POST" action="./login/loginCheck_manager.php">
                     <span id=title><h1>MANAGER</h1></span>
                     <div class="inputField">
                         <label>ID</label><input type="text" name="input_id" placeholder="Enter your id" size="18">
