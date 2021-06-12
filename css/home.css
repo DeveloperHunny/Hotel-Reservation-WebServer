@@ -5,6 +5,14 @@
     color: black;
 }
 
+ul{
+    list-style:none;
+}
+
+a{
+    text-decoration: none;
+}
+
 button{
     border:none;
     background:transparent;
@@ -14,13 +22,177 @@ button, button:focus{
     cursor:pointer;
 }
 
+input[name="tabBtn"]{
+    display:none;
+}
+
 .container{
     width:100vw;
     height:100vh;
     background:white;
 }
 
+/*=== header ===*/
 header{
     width:100%;
     background:skyblue;
+
+    position:relative;
+    text-align:center;
+    padding: 15px;
 }
+
+/*=== logo ===*/
+header .logo{
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+}
+
+header .logo > #title{
+    margin-left: 8px;
+}
+
+header .logo > i{
+    font-size: 40px;
+}
+
+/*=== nav ===*/
+header nav{
+    position:absolute;
+    left:50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+header nav ul li{
+    display: inline;
+    margin-right:15px;
+    font-weight:bold;
+}
+
+header #moreBtn{
+    position:absolute;
+    right:15px;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+header #moreBtn{
+    font-size:15px;
+    font-weight:bold;
+}
+
+/*=== main ===*/
+main{
+    width: 100%;
+}
+
+/*=== photo ===*/
+main .photo{
+    margin: 0px auto;
+    border-bottom: 2px solid black;
+}
+
+/*=== introduction ===*/
+main #introduction{
+    padding : 20px;
+    text-align:center;
+    border-bottom: 2px solid black;
+}
+
+main #introduction #title{
+    font-size: 30px;
+}
+
+main #introduction > p{
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+/*=== tabMenu ===*/
+main .mainBox{
+    width:100%;
+    display:flex;
+    margin-top: 50px;
+    min-height: 500px;
+}
+
+main .mainBox #tabMenu{
+    width:50%;
+}
+
+main .mainBox #tabMenu input[name="tabBtn"] + label{
+    border:2px solid black;
+    float:left;
+}
+
+main .mainBox #tabMenu input[name="tabBtn"]:checked + label{
+    background: skyblue;
+}
+
+main .mainBox #tabMenu .tabContent{
+    width:100%;
+    display: none;
+    overflow: hidden;
+    border:2px solid black;
+    border-collapse:collapse;
+}
+
+#tab_btn_notice:checked ~ #tab_content_notice,
+#tab_btn_community:checked ~ #tab_content_community,
+#tab_btn_question:checked ~ #tab_content_question{
+    display:block;
+}
+
+
+
+main .mainBox #serviceMenu{
+    width:50%;
+}
+
+main .mainBox #serviceMenu > ul{
+    border:2px solid black;
+}
+
+footer{
+    width:100%;
+    height: 80px;
+    background:#cfcfcf;
+    position: relative;
+}
+
+footer .logo{
+    display:flex;
+    position:absolute;
+    top:50%;
+    left: 20px;
+    transform: translateY(-50%);
+}
+
+footer .logo i{
+    font-size:40px;
+}
+
+footer .logo #title{
+    margin-left: 8px;
+}
+
+footer .info{
+    width:330px;
+    position:absolute;
+    top:50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+footer .info span{
+    font-size: 10px;
+}
+
+
+
+
