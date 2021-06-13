@@ -1,4 +1,6 @@
 <?php 
+    //Check the user's status is login
+    //if not login, back to login page
     session_start();
     if($_SESSION['client_user'] == 'NONE' || !isset($_SESSION['client_user'])){
         echo ("<script>location.replace('../index.php')</script>");
@@ -20,16 +22,17 @@
                     <i class="fas fa-h-square" alt="Logo"></i>
                     <span id=title><a href="home.php"><h2>Hotel</h2></a></span>
                 </div>
+                <input type="checkbox" id="moreBtn"/>
+                <label for="moreBtn"><i class="fas fa-bars"></i></label>
                 <nav>
                     <ul>
-                        <li><a href='#'>COMPANY</a></li>
-                        <li><a href='#'>PRODUCT</a></li>
-                        <li><a href='#'>CUSTOMER</a></li>
-                        <li><a href='#'>SERVICE</a></li>
-                        <li><a href='#'>RECRUIT</a></li>
+                        <li><a href='#'>Instroduction</a></li>
+                        <li><a href='#'>Room</a></li>
+                        <li><a href='#'>Service</a></li>
+                        <li><a href='reservation.php'>Reservation</a></li>
+                        <li><a href='#'>Community</a></li>
                     </ul>
                 </nav>
-                <button id="moreBtn">Log Out</button>
             </header>
             <main>
                 <div class="photo">

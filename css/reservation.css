@@ -22,10 +22,6 @@ button, button:focus{
     cursor:pointer;
 }
 
-input[name="tabBtn"]{
-    display:none;
-}
-
 .container{
     width:100vw;
     height:100vh;
@@ -90,76 +86,55 @@ header #moreBtn:checked ~ nav{
 
 /*=== main ===*/
 main{
-    width: 100%;
-}
-
-/*=== photo ===*/
-main .photo{
-    margin: 0px auto;
-    border-bottom: 2px solid black;
-}
-
-/*=== introduction ===*/
-main #introduction{
-    padding : 20px;
-    text-align:center;
-    border-bottom: 2px solid black;
-}
-
-main #introduction #title{
-    font-size: 30px;
-}
-
-main #introduction > p{
-    width: 70%;
-    margin: 0 auto;
-    margin-top: 10px;
-}
-
-/*=== tabMenu ===*/
-main .mainBox{
     width:100%;
+    min-height: 800px;
+}
+
+/*=== main img_title ===*/
+main #img_wrapper{
+    width:100%;
+    height: 300px;
+    position: relative;
+}
+
+main #img_wrapper img{
+    width:100%;
+    height:100%;
+}
+
+main #img_wrapper > .title{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+main #img_wrapper > .title > h1{
+    color:white;
+    font-size: 60px;
+}
+
+/*=== main #info_title ===*/
+main #info_wrapper{
+    width:100%;
+    margin-top: 20px;
     display:flex;
-    margin-top: 50px;
-    min-height: 500px;
+    flex-direction:column;
+    align-items:center;
 }
 
-main .mainBox #tabMenu{
-    width:50%;
-}
-
-main .mainBox #tabMenu input[name="tabBtn"] + label{
-    border:2px solid black;
-    float:left;
-}
-
-main .mainBox #tabMenu input[name="tabBtn"]:checked + label{
-    background: skyblue;
-}
-
-main .mainBox #tabMenu .tabContent{
-    width:100%;
-    display: none;
-    overflow: hidden;
-    border:2px solid black;
-    border-collapse:collapse;
-}
-
-#tab_btn_notice:checked ~ #tab_content_notice,
-#tab_btn_community:checked ~ #tab_content_community,
-#tab_btn_question:checked ~ #tab_content_question{
+main #info_wrapper .small_bar{
+    border-bottom:2px solid black;
     display:block;
+    width:100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-
-
-main .mainBox #serviceMenu{
-    width:50%;
+main #info_wrapper .info{
+    text-align: center;
 }
 
-main .mainBox #serviceMenu > ul{
-    border:2px solid black;
-}
 
 /*=== footer ===*/
 footer{
@@ -196,7 +171,3 @@ footer .info{
 footer .info span{
     font-size: 10px;
 }
-
-
-
-
