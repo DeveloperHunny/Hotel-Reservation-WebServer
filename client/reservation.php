@@ -39,7 +39,6 @@
                     <img src="../img/hotelRoom1.jpg"/>
                     <span class="title"><h1>Reservation</h1></span>
                 </div>
-                
                 <div id="info_wrapper">
                     <span class="title"><h1>Reservation</h1></span>
                     <span class="small_bar"></span>
@@ -47,6 +46,27 @@
                         예약 이후 12시간 내 요금 전액을 입금하시면 예약이 완료 되며<br>
                         입금이 확인되지 않을 경우 예약이 취소 될 수 있습니다. 그밖에 예약 
                         전 안내사항을 꼭 확인 부탁드립니다.</span>
+                </div>
+                <div id="reservation_wrapper">
+                    <div id="calender_wrapper">
+                        <div id ="controller">
+                            <button id="prevMonthBtn"><i class="fas fa-chevron-left"></i></button>
+                            <span id="year_month">Current Month</span>
+                            <button id="nextMonthBtn"><i class="fas fa-chevron-right"></i></button>
+                        </div>
+                        <span class="small_bar"></span>
+                        <table id="calender">
+                            <tr>
+                                <td class="day">일요일</td>
+                                <td class="day">월요일</td>
+                                <td class="day">화요일</td>
+                                <td class="day">수요일</td>
+                                <td class="day">목요일</td>
+                                <td class="day">금요일</td>
+                                <td class="day">토요일</td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
 
             </main>
@@ -67,5 +87,5 @@
         </div>
 
     </body>
-
+    <script src="../js/calender.js"></script>
 </html>
